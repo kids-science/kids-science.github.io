@@ -1,0 +1,69 @@
+body {
+    background-color: darkblue;
+    font-family: 'Special Elite', cursive;
+    margin: 50px;
+    color: white;
+}
+
+nav {
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+nav a {
+    padding-right: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: white;
+}
+
+a:hover {
+    color: black;
+}
+
+a:active {
+    color: white;
+}
+
+nav a.active {
+    color: white;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 40px;
+    padding-top: 50px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+p, ul, li ,table {
+    width: 50%;
+    font-size: 25px;
+}
+
+p {
+    padding-left: 20px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
