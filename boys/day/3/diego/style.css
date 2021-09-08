@@ -1,0 +1,76 @@
+body {
+    background-color: #fcca00;
+    font-family: 'Roboto Slab', serif;
+    margin: 50px;
+}
+
+nav {
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+nav a {
+    padding-right: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: black;
+}
+
+a:hover {
+    color: saddlebrown;
+}
+
+a:active {
+    color: saddlebrown;
+}
+
+nav a.active {
+    color: saddlebrown;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 40px;
+    padding-top: 50px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+p, ul {
+    width: 90%;
+    font-size: 25px;
+}
+
+p {
+    padding-left: 20px;
+}
+
+li {
+    list-style: none !important;
+    width: 100% !important;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+}
+
+.list-img {
+    width: 20%;
+}
