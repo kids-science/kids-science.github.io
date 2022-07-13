@@ -1,6 +1,6 @@
-# Kids@Science FHNW 2021
+# Kids@Science FHNW
 
-Willkommen auf der Startseite der kids@science Web Projekte der Durchführung 2021.
+Willkommen auf der Startseite der kids@science Web Projekte.
 
 ## Links zu den Webprojekten
 
