@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meine Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="tags.html">Auswahl Tags</a>
+      <a href="https://kids-science.github.io/">Übersicht</a>
+    </nav>
+    <header>
+      <h3>Darf ich vorstellen</h3>
+      <h1>LINA</h1>
+    </header>
+    <img src="LINA.webp" alt="Ed Sheeran mit Gitarre" class="center rotate" />
+    <h2>Meine Lieblingssongs von LINA</h2>
+    <ul>
+      <li>Wasser</li>
+      <li>Hype</li>
+      <li>Rebellen</li>
+    </ul>
+    <h2>Biografie</h2>
+    <li>LINA wurde am 15 Dezember 1997 in Seelze geboren.
+      Sie ist eine Sängerin, Songwriterin und Schauspielerin.
+      2013 gewann sie den Preis Nachwuchssongwriterin des Jahres.
+      Später hat sie dann in bibi und tina mitgespielt als bibi.
+
+    </li>
+    <script>
+      let elem = document.querySelector(".rotate");
+      if (elem != null) {
+        const spin = [
+          { transform: "rotate(0)" },
+          { transform: "rotate(360deg)" },
+        ];
+        const timing = {
+          duration: 2000,
+          iterations: 1,
+        };
+        elem.addEventListener("mouseover", () => {
+          elem.animate(spin, timing);
+        });
+        elem.addEventListener("click", () => {
+          elem.animate(spin, timing);
+        });
+      }
+    </script>
+  </body>
+</html>

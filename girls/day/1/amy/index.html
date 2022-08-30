@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>私のウェブサイト</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="active">家</a>
+      <a href="about.html">約</a>
+      <a href="tags.html">選択タグ</a>
+      <a href="https://kids-science.github.io/">概要</a>
+    </nav>
+    <header>
+      <h3>好きな歌手：</h3>
+      <h1>アデル</h1>
+    </header>
+    <img src="adele.webp" alt="Ed Sheeran mit Gitarre" class="center rotate" />
+    <h2>アデルの好きな曲</h2>
+    <ul>
+      <li>Someone like you</li>
+      <li>Rolling in the deep</li>
+      <li>To make you feel my love</li>
+    </ul>
+    <h2>バイオグラフィー</h2>
+    <p>
+      Adele Laurie Blue Adkins は 5 月 5 日に生まれました。
+      アデルはイギリスのシンガーソングライターです。
+      2006 年に BRIT School を卒業した後、Adele は XL Recordings とレコード契約を結びました。
+      彼女のデビュー アルバム 19 は 2008 年にリリースされ、UK トップ 5 シングル「Chasing Pavements」と「Make You Feel My Love」を生み出しました。
+      このアルバムは、英国で 8 倍のプラチナ、米国で 3 倍のプラチナに認定されました。
+      アデルはブリット アワードのライジング スター賞とグラミー賞の最優秀新人賞を受賞しました。
+    </p>
+    <script>      
+    let elem = document.querySelector(".rotate");
+      if (elem != null) {
+        const spin = [
+          { transform: "rotate(0)" },
+          { transform: "rotate(360deg)" },
+        ];
+        const timing = {
+          duration: 2000,
+          iterations: 1,
+        };
+        elem.addEventListener("mouseover", () => {
+          elem.animate(spin, timing);
+        });
+        elem.addEventListener("click", () => {
+          elem.animate(spin, timing);
+        });
+      }
+    </script>
+  </body>
+</html>
