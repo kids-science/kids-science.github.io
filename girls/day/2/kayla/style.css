@@ -1,0 +1,87 @@
+body {
+    background-color: lightblue;
+    color:black;
+    font-family: 'Special Elite', cursive;
+    margin: 50px;
+}
+h1{
+color:IndianRed;
+}
+h2{color:IndianRed;}
+nav {
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+nav a {
+    padding-right: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: black;
+}
+
+a:hover {
+    color: LightSeaGreen;
+}
+
+a:active {
+    color: LightSeaGreen;
+}
+
+nav a.active {
+    color: black;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 40px;
+    padding-top: 50px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+p, ul {
+    width: 50%;
+    font-size: 25px;
+}
+
+p {
+    padding-left: 20px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+.zoom{
+transform:scale;
+transition:700ms;
+}
+.zoom:hover{
+scale:1.4;
+}
+.bewegen:hover{
+transform:translateX(100px);
+
+}
+.bewegen{
+width: 25%;
+transition:500ms;
+}

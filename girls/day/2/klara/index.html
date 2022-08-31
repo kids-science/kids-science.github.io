@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meine Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="tags.html">Auswahl Tags</a>
+      <a href="https://kids-science.github.io/">Übersicht</a>
+    </nav>
+    <header>
+      <h3>Darf ich vorstellen...</h3>
+      <h1>...Millie Bobby Brown</h1>
+    </header>
+    <img src="Millie Bobby Brown.webp" alt="Ed Sheeran mit Gitarre" class="center rotate" />
+    <h2>Filmbiografie</h2>
+    <ul>
+      <li>Once Upon A Time In Wonderland - Staffel 1 Episode 1 (2013)</li>
+      <li>Navy CIS - Staffel 12 Episode 6 (2014)</li>
+      <li>Intruders - Staffel 1 (2014)</li>
+      <li>Grey's Anatomy - Die jungen Ärzte - Staffel 11
+        Episode 15 (2014) </li>
+      <li>Stranger Things - Staffel 1 (2016)</li>
+      <li>Stranger Things - Staffel 2 (2017)</li>
+      <li>The Thing About Jellyfish (2019)</li>
+      <li>Stranger Things - Staffel 3 (2019)</li>
+      <li>Godzilla 2: King Of The Monsters (2019)</li>
+      <li>Enola Holmes (2020)</li>
+      <li>The Girls I’ve Been (2021)</li>
+      <li>Godzilla Vs. Kong (2021)</li>
+      <li>Stranger Things - Staffel 4 (2022)</li>
+      <li>Enola Holmes 2 (2022)</li>
+      <li>Damsel (2022)</li>
+      <li>The Electric State (2023)</li>
+      <li>Stranger Things - Staffel 5 (TBD)</li>
+    </ul>
+    <h2>Biografie</h2>
+    <p>
+      Millie Bobby Brown wurde am 19.2.2004 in Marbella, Spanien geboren.
+      Sie hat drei Geschwister Charlie, Paige und Ava.
+      Sie ist seit 2021 mit Jake Bongiovi.
+      Ihr Sternzeichen ist Wassermann.
+      Millie ist 1.63m gross.
+      2022 Wohnt sie in Grossbritanien.
+      Ein Autogramm von Millie Bobby Brown kostet 120 Euro.
+      Für ein Foto mit ihr muss der geneigte Fan 170 Euro ausgeben.
+      Millie arbeitet auch als Model.
+      Sie spricht nur Englisch.
+     Millie kam mit einer angeborenen Hörbehinderung zur Welt, und von
+      den ersten Jahren ihres Lebens an konnte sie nur schlecht hören.
+    </p>
+    <script>
+      let elem = document.querySelector(".rotate");
+      if (elem != null) {
+        const spin = [
+          { transform: "rotate(0)" },
+          { transform: "rotate(360deg)" },
+        ];
+        const timing = {
+          duration: 2000,
+          iterations: 1,
+        };
+        elem.addEventListener("mouseover", () => {
+          elem.animate(spin, timing);
+        });
+        elem.addEventListener("click", () => {
+          elem.animate(spin, timing);
+        });
+      }
+    </script>
+  </body>
+</html>

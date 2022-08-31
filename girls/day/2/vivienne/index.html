@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meine Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="tags.html">Auswahl Tags</a>
+      <a href="https://kids-science.github.io/">Übersicht</a>
+    </nav>
+    <header>
+      <h3>Darf ich vorstellen...</h3>
+      <h1>... die Emoji's</h1>
+    </header>
+    <img src="Emoji.webp" alt="Ed Sheeran mit Gitarre" class="center rotate" />
+    <h2>Meine lieblings Emoji's</h2>
+    <ul>
+      <li>
+        <img src="zwinker.webp" alt="Ed Sheeran mit Gitarre" class="center gross rotate" />
+      </li>
+      <li>        <img src="lachen.jpg" alt="Ed Sheeran mit Gitarre" class="center gross rotate" />
+      </li>
+     <li>     <img src="wow.jfif" alt="Ed Sheeran mit Gitarre" class="center gross rotate" />
+      </li>
+    </ul>
+    <h2>Fakten</h2>
+    <p>
+     Es gibt ganz viele Emoji's. Von Kleider bis zu Flagen und Formen. Man kann mit ihnen sachen Ausdrücken. Ich benutze Emoji's oft. Die Emoji's wurden in Japan erfunden aber gehören einem Deutschen. Es gibt einen Welt-Emoji-Tag. Es gibt Flime in denen Emoji's vorkommen und auch Hauptrollen sind.
+    </p>
+    <script>
+      let elem = document.querySelector(".rotate");
+      if (elem != null) {
+        const spin = [
+          { transform: "rotate(0)" },
+          { transform: "rotate(360deg)" },
+        ];
+        const timing = {
+          duration: 2000,
+          iterations: 1,
+        };
+        elem.addEventListener("mouseover", () => {
+          elem.animate(spin, timing);
+        });
+        elem.addEventListener("click", () => {
+          elem.animate(spin, timing);
+        });
+      }
+    </script>
+  </body>
+</html>
+<img src="viele.jfif" alt="Ed Sheeran mit Gitarre" class="center rotate" />

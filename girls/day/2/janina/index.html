@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meine Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="tags.html">Auswahl Tags</a>
+      <a href="https://kids-science.github.io/">Übersicht</a>
+    </nav>
+    <header>
+      <h3>Darf ich vorstellen...</h3>
+      <h1>...Lucy Pevensiee</h1>
+      <h2 class="keinabstand">(Georgie Henley)</h2>
+    </header>
+    <img src="lucy.jpg" alt="Ed Sheeran mit Gitarre" class="center rotate" />
+    <h2>Filmbiografie</h2>
+    <ul>
+      <li>2005 der König von Narnia</li>
+      <li>2008 Prinz Kaspian von Narnia</li>
+      <li>2010 Die Chroniken von Narnia: Die Reise auf der Morgenröte</li>
+      <li>2020 The Spnish Princess - Staffel 1</li>
+      <li>2019 The Spnish Princess - Staffel 2</li>
+      <li>2017 Access All Areas</li>
+      <li>2014 Perfect Sisters</li>
+      <li>2014 The Sisterhood of Night</li>
+
+
+
+
+
+    <script>
+      let elem = document.querySelector(".rotate");
+      if (elem != null) {
+        const spin = [
+          { transform: "rotate(0)" },
+          { transform: "rotate(360deg)" },
+        ];
+        const timing = {
+          duration: 2000,
+          iterations: 1,
+        };
+        elem.addEventListener("mouseover", () => {
+          elem.animate(spin, timing);
+        });
+        elem.addEventListener("click", () => {
+          elem.animate(spin, timing);
+        });
+      }
+    </script>
+  </body>
+</html>
