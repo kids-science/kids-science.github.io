@@ -1,10 +1,10 @@
 body {
     background-color: wheat;
-    font-family: 'Special Elite', cursive;
+    font-family: "Special Elite", cursive;
     margin: 50px;
 }
-h1{
-color:DarkOrange;
+h1 {
+    color: darkorange;
 }
 
 nav {
@@ -19,7 +19,8 @@ a {
     text-decoration: none;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
     color: black;
 }
 
@@ -42,26 +43,24 @@ header {
 h1 {
     font-size: 50px;
 }
-h2{
-color:darkorange;
-}
-
+h2 {
+    color: darkorange;
     font-size: 40px;
     padding-top: 50px;
-
+}
 
 h3 {
     font-size: 25px;
 }
 
-p, ul {
+p,
+ul {
     width: 50%;
     font-size: 25px;
 }
 
 p {
-    padding-left: 25
-    px;
+    padding-left: 25 px;
 }
 
 .center {
@@ -70,9 +69,9 @@ p {
     margin-right: auto;
     width: 35%;
 }
-.gross{
-transition:500ms;
+.gross {
+    transition: 500ms;
 }
-.gross:hover{
-scale:1.5;
+.gross:hover {
+    scale: 1.5;
 }

@@ -1,7 +1,7 @@
 body {
     background-color: lightblue;
-    font-family: 'Indie Flower', cursive;
-    font-family: 'Indie Flower', cursive;
+    font-family: "Indie Flower", cursive;
+    font-family: "Indie Flower", cursive;
     margin: 50px;
 }
 
@@ -18,7 +18,8 @@ a {
     text-decoration: none;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
     color: black;
 }
 
@@ -51,7 +52,8 @@ h3 {
     font-size: 25px;
 }
 
-p, ul {
+p,
+ul {
     width: 50%;
     font-size: 25px;
 }
@@ -68,14 +70,15 @@ p {
 }
 
 .klein {
-width: 250px;
-float:right;
+    width: 250px;
+    float: right;
 }
 
-.mittel{width: 250px;
-float:right;
+.mittel {
+    width: 250px;
+    float: right;
 }
 
 .little {
-width: 180px;
+    width: 180px;
 }
