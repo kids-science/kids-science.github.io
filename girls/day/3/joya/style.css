@@ -1,0 +1,81 @@
+body {
+    background-color: lightblue;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Indie Flower', cursive;
+    margin: 50px;
+}
+
+nav {
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+nav a {
+    padding-right: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: black;
+}
+
+a:hover {
+    color: cadetblue;
+}
+
+a:active {
+    color: aqua;
+}
+
+nav a.active {
+    color: black;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 40px;
+    padding-top: 50px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+p, ul {
+    width: 50%;
+    font-size: 25px;
+}
+
+p {
+    padding-left: 20px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+}
+
+.klein {
+width: 250px;
+float:right;
+}
+
+.mittel{width: 250px;
+float:right;
+}
+
+.little {
+width: 180px;
+}

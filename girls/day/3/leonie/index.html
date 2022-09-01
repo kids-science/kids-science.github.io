@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meine Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
+
+
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="tags.html">Auswahl Tags</a>
+      <a href="https://kids-science.github.io/">Übersicht</a>
+    </nav>
+    <header>
+      <h3></h3>
+      <h1>Der Labrador-Retriever</h1>
+    </header>
+    <img src="Labrador.jpg" alt="Ed Sheeran mit Gitarre" class="center rotate" />
+    <h2>Charakter des Labradors</h2>
+    <img src="Labrador Garten.jpg" alt="Ed Sheeran mit Gitarre" class="center seite rotate" />
+
+    <p>
+      Sie sind sehr freundlich, verspielt und tollpatschig.
+      Labradore sind niemals agressiv und gute Spielkameraden
+      für Kinder, sie gehen immer mit Begeisterung
+      an Aufgaben. Da der Labrador gerne frisst sollte
+      man darauf achten, dass die Futtermenge kontrolliert
+      wird, damit er nicht dick wird.
+    </p>
+    <h2>Aussehen</h2>
+    <img src="Labradore farbig.jpg" alt="Ed Sheeran mit Gitarre" class="center seite rotate" />
+
+    <p>Labradore können blondes, schwarzes, braunes oder weisses
+    Fell haben.Ihre Augen sind haselnussbraun, braun,
+    schwarz oder gelb. Männchen werden ca.57-62cm hoch
+    und ca.28-36kg schwer.Weibchen werden ca.54-56cm hoch
+    und werden ca.25-32kg schwer.</p>
+
+    <h2>Pflege und Auslauf</h2>
+    <img src="Schwimmender Labrador.jpg" alt="Ed Scheeran mit Gitarre" class="center seite rotate" />
+
+    <p>
+      Der Labrador braucht nur ein minimum an Fellpflege.
+      Man muss nur mit dem Labrador baden, wenn er sehr
+      dreckig ist.
+      Er braucht regelmässigen Auslauf (drei mal am Tag)
+      und da er gerne schwimmt sollte man ihm das auch manchmal
+      ermöglichen zu schwimmen.
+    </p>
+    <h2>Welpen und Erziehung</h2>
+    <img src="labrador welpen schlafend.jpg" alt="Ed Sheeran mit Gitarre" class="center seite rotate" />
+
+    <P>Labradore bekommen im Durchschnitt 7-8 Welpen.
+    Sie schlafen sehr viel und in den ersten 4-6 Monaten
+      sollten sie nicht alleine gellassen werden.</P>
+      <img src="labrador-welpen.jpg" alt="Ed Sheeran mit Gitarre" class="center seite rotate" />
+
+      <p>Sie lernen am schnellsten wenn sie Behlohnungen wie
+    Leckerbissen und Streicheleinheiten bekommen,
+    wenn sie die Aufgabe richtig machen. Eine Positive
+    Einstellung des Herrchens ist auch wichtig.</P>
+    <script>
+      let elem = document.querySelector(".rotate");
+      if (elem != null) {
+        const spin = [
+          { transform: "rotate(0)" },
+          { transform: "rotate(360deg)" },
+        ];
+        const timing = {
+          duration: 2000,
+          iterations: 1,
+        };
+        elem.addEventListener("mouseover", () => {
+          elem.animate(spin, timing);
+        });
+        elem.addEventListener("click", () => {
+          elem.animate(spin, timing);
+        });
+      }
+    </script>
+  </body>
+</html>
