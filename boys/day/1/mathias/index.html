@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steckbriefe von berühmten Fussballern</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="active">Messi</a>
+      <a href="Mbappe.html">Mbappe</a>
+      <a href="about.html">About</a>
+      <a href="tags.html">Auswahl Tags</a>
+      <a href="https://kids-science.github.io/">Übersicht</a>
+    </nav>
+    <header>
+      <h3></h3>
+      <h1>Steckbrief von Messi</h1>
+    </header>
+    <img src="Messi.jpg" alt="Messi bild" class="center" />
+    <h2>Die Clubs bei denen Messi war</h2>
+    <ul>
+      <li>FC Barcelona C</li>
+      <li>FC Barcelona B</li>
+      <li>FC Barcelona</li>
+      <li>Paris Saint-German</li>
+    </ul>
+    <h2>Biografie</h2>
+    <p>Lionel Messi – auch unter dem Namen Leo Messi bekannt – wurde 1987 in Rosario, Argentinien geboren. Messis Lebenslauf als Profifußballer setzt bereits im Alter von fünf Jahren ein. Als Kleinkind spielte er zunächst für den Verein Grandoli FC, ab dem achten Lebensjahr für Atlético Newell's Old Boys.
+    </p>
+    <script>
+      let elem = document.querySelector(".rotate");
+      if (elem != null) {
+        const spin = [
+          { transform: "rotate(0)" },
+          { transform: "rotate(360deg)" },
+        ];
+        const timing = {
+          duration: 2000,
+          iterations: 1,
+        };
+        elem.addEventListener("mouseover", () => {
+          elem.animate(spin, timing);
+        });
+        elem.addEventListener("click", () => {
+          elem.animate(spin, timing);
+        });
+      }
+    </script>
+  </body>
+</html>

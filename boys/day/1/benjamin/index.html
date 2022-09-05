@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steckbrief Feldhase</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="tags.html">Auswahl Tags</a>
+      <a href="https://kids-science.github.io/">Übersicht</a>
+    </nav>
+    <header>
+      <h3>Darf ich vorstellen...</h3>
+      <h1>...der Feldhase </h1>
+    </header>
+    <img src="Feldhase.jpg" alt="Feldhase in der Blumenwiese" class="center rotate" />
+    <h2>Angaben vom Feldhasen</h2>
+    <ul>
+      <li><strong>Grösse:</strong> 48-75cm</li>
+      <li><strong>Gewicht:</strong> 2,5-7kg</li>
+      <li><strong>Geschwindigkeit:</strong> 70km/h</li>
+      <li><strong>Lebensdauer:</strong> etwa 12 Jahre</li>
+      <li><strong>Lebensraum:</strong> Wiesen, Felder, Äcker, Wälder</li>
+      <li><strong>Nahrung:</strong> Gräser, Kräuter, Wurzeln, Knollen</li>
+      <li><strong>Feinde:</strong> Fuchs, Dachs, Marder, Eulen, Krähen, Greifvögel</li>
+    </ul>
+    <h2>Beschreibung</h2>
+    <p>
+      Seine Ohren und Beine sind im Verhältnis zum restlichen Körper viel länger als die der Kaninchen. Der Schwanz des Feldhasen ist etwa zehn Zentimeter lang. Der Feldhase ist sehr scheu und lebt meist nachtaktiv als Einzelgänger. Er bevorzugt warme, trockene und offene Flächen mit einer guten Rundsicht.
+    </p>
+    <script>
+      let elem = document.querySelector(".rotate");
+      if (elem != null) {
+        const spin = [
+          { transform: "rotate(0)" },
+          { transform: "rotate(360deg)" },
+        ];
+        const timing = {
+          duration: 2000,
+          iterations: 1,
+        };
+        elem.addEventListener("mouseover", () => {
+          elem.animate(spin, timing);
+        });
+        elem.addEventListener("click", () => {
+          elem.animate(spin, timing);
+        });
+      }
+    </script>
+  </body>
+</html>

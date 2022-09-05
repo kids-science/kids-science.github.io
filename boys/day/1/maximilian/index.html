@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trophy Truck</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="tags.html">Auswahl Tags</a>
+      <a href="https://kids-science.github.io/">Übersicht</a>
+    </nav>
+    <header>
+      <h3>Der Trophy Truck</h3></h1>
+    </header>
+    <img src="trophy truck real.jpg" alt="Auto für die Wüste" />
+    <ul>
+    <li>Der Motor ist ein V8 mit 800 Ps und 936 NM.</li>
+      <li></li>
+      <li></li>
+    </ul>
+    <h2>zweck des Fahrzeuges ist spass in der wüste zu haben.
+
+    </h2>
+    <p>Der Trophy truck wurde für die Wüste gebaut.Er hatt einen Meter Bodenfreiheit.Über stock und Stein schafft er 200 KMH.Er Kann 40 treppenstufen herunterspringen.<br>
+    In Kalifornien gibt es jedes jahr ein rennen in einem Dorf dort sind die strassen aus geröll und schutt sie springen über alle treppen im Dorf</p>
+    <script>
+    let elem = document.querySelector(".rotate");
+      if (elem != null) {
+        const spin = [
+          { transform: "rotate(0)" },
+          { transform: "rotate(360deg)" },
+        ];
+        const timing = {
+          duration: 2000,
+          iterations: 1,
+        };
+        elem.addEventListener("mouseover", () => {
+          elem.animate(spin, timing);
+        });
+        elem.addEventListener("click", () => {
+          elem.animate(spin, timing);
+        });
+      }
+    </script>
+  </body>
+</html>
