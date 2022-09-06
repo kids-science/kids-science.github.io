@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fibonacci Zahlen</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="DieZahlen.html">Die Zahlen</a>
+      <a href="Mathe.html">Mathe</a>
+      <a href="GoldenerSchnitt.html">Goldener Schnitt</a>
+      <a href="about.html">About</a>
+      <a href="tags.html">Übersicht Tags</a>
+      <a href="https://kids-science.github.io/">Übersicht</a>
+
+    </nav>
+    <header>
+      <h1>Goldener Schnitt</h1>
+
+    </header>
+
+    <h3>Der Goldene Schnitt ist 0,618. Die Fibonacci zahlen haben eine Änlichkeit zu dem Goldenen Schnitt.Nämlich
+      wenn man eine Fibonacci Zahl durch die nächst tiefere rechnen. Man wird immer näher an 0.618 kommen.
+
+    </h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/MqZkl8_uF08" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <ul>
+
+    </ul>
+
+    <p>
+
+    </p>
+    <script>
+      let elem = document.querySelector(".rotate");
+      if (elem != null) {
+        const spin = [
+          { transform: "rotate(0)" },
+          { transform: "rotate(360deg)" },
+        ];
+        const timing = {
+          duration: 2000,
+          iterations: 1,
+        };
+        elem.addEventListener("mouseover", () => {
+          elem.animate(spin, timing);
+        });
+        elem.addEventListener("click", () => {
+          elem.animate(spin, timing);
+        });
+      }
+    </script>
+  </body>
+</html>

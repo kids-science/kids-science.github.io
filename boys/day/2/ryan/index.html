@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vulkane</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="tags.html">Auswahl Tags</a>
+      <a href="https://kids-science.github.io/">Übersicht</a>
+    </nav>
+    <header>
+
+      <h1>Vulkane</h1>
+    </header>
+    <img src="Vulkanausbruch.jfif" alt="Vulkan bricht aus" class="center rotate" />
+    <h2>10 grösste Vulkanausbrüche </h2>
+    <ul>
+      <li>Tambora, 1815 </li>
+      <li>Krakatau, 1883 </li>
+      <li>Montagne Pelee, 1902 </li>
+      <li>Nevado del Ruiz, 1985 </li>
+      <li>Ätna, 1669 </li>
+      <li>Ätna, 1169 </li>
+      <li>Unzen, 1792 </li>
+      <li>Vesuv, 1631 </li>
+      <li>Vesuv, 79 n.Chr. </li>
+      <li>Kelut, 1919 </li>
+    </ul>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OzZ1Rqgm0Sc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h2>Eyjafjallajökull Seckbrief:</h2>
+    <ul>
+      <li>Lage: Südliches Island</li>
+      <li>Koordinaten: 63° 38′ 0″ N , 19° 36′ 0″ W</li>
+      <li>Typ: Eiskappe</li>
+     <li> Fläche: 78 km²</li>
+      <li>Höhe:	1651 m</li>
+      <li> Gebirge:	Eyjafjöll</li>
+    </ul>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/WRkuRhumOaw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <script>
+      let elem = document.querySelector(".rotate");
+      if (elem != null) {
+        const spin = [
+          { transform: "rotate(0)" },
+          { transform: "rotate(360deg)" },
+        ];
+        const timing = {
+          duration: 2000,
+          iterations: 1,
+        };
+        elem.addEventListener("mouseover", () => {
+          elem.animate(spin, timing);
+        });
+        elem.addEventListener("click", () => {
+          elem.animate(spin, timing);
+        });
+      }
+    </script>
+  </body>
+</html>

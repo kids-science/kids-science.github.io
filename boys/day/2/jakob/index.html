@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fibonacci Zahlen</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="DieZahlen.html">Die Zahlen</a>
+      <a href="Mathe.html">Mathe</a>
+      <a href="GoldenerSchnitt.html">Goldener Schnitt</a>
+      <a href="about.html">About</a>
+      <a href="tags.html">Übersicht Tags</a>
+      <a href="https://kids-science.github.io/">Übersicht</a>
+    </nav>
+    <header>
+      <h1>Fibonacci Zahlen</h1>
+      <h2>Die Zahlenfolge der Natur</h2>
+    </header>
+    <img src="fibroi.gif" alt="Goldene Spirale" class="center" />
+    <h3>Fibionacci Zahlen ist eine zahlenfolge die oft in der Natur vorkommt.Zum Beispiel bei Tannenzapfen
+    oder bei der Ananas, dort sind nämlich die Spiralen meistens in einer bestimten Reihenfolge angeordnet.
+    Bei der Ananas sind es in eine Richtung 89 und in die andere 55. Bei dem Tannenzapfen sind es 8 und 13.
+    </h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ODnORfNigfg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <ul>
+
+    </ul>
+
+    <p>
+
+    <script>
+      let elem = document.querySelector(".rotate");
+      if (elem != null) {
+        const spin = [
+          { transform: "rotate(0)" },
+          { transform: "rotate(360deg)" },
+        ];
+        const timing = {
+          duration: 2000,
+          iterations: 1,
+        };
+        elem.addEventListener("mouseover", () => {
+          elem.animate(spin, timing);
+        });
+        elem.addEventListener("click", () => {
+          elem.animate(spin, timing);
+        });
+      }
+    </script>
+  </body>
+</html>

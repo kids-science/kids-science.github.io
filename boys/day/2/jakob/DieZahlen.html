@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fibonacci Zahlen</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="DieZahlen.html">Die Zahlen</a>
+      <a href="Mathe.html">Mathe</a>
+      <a href="GoldenerSchnitt.html">Goldener Schnitt</a>
+      <a href="about.html">About</a>
+      <a href="tags.html">Übersicht Tags</a>
+      <a href="https://kids-science.github.io/">Übersicht</a>
+
+    </nav>
+    <header>
+      <h1>Die Zahlen</h1>
+
+    </header>
+
+    <h2>1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,1597,2584,4181,6765,10946...</h2>
+    
+    <ul>
+
+    </ul>
+    <h2></h2>
+    <p>
+
+    </p>
+    <script>
+      let elem = document.querySelector(".rotate");
+      if (elem != null) {
+        const spin = [
+          { transform: "rotate(0)" },
+          { transform: "rotate(360deg)" },
+        ];
+        const timing = {
+          duration: 2000,
+          iterations: 1,
+        };
+        elem.addEventListener("mouseover", () => {
+          elem.animate(spin, timing);
+        });
+        elem.addEventListener("click", () => {
+          elem.animate(spin, timing);
+        });
+      }
+    </script>
+  </body>
+</html>
