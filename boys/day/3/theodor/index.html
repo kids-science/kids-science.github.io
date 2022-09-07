@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Costa Rica</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="Quetzal.html">Quetzal</a>
+    <a href="Faultier.html">Faultier</a>
+    <a href="about.html">About</a>
+    <a href="tags.html">Auswahl Tags</a>
+    <a href="https://kids-science.github.io/">Übersicht</a>
+</nav>
+<header>
+    <h1>Costa Rica</h1>
+</header>
+<label for="Tiere">Choose a Tier:</label>
+<select name="Tiere" id="Tiere">
+    <option value="Faultier">Faultier</option>
+    <option value="saab">Saab</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+</select>
+<img src="Costa Rica.png" alt="Costa Rica Flagge" class="center rotate"/>
+<br><br><br><br>
+<h2>Einstieg</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FetAZJiv36A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br><br>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7njGOxnG739qgwXzYSHoFT?utm_source=generator" width="50%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+<script>
+      let elem = document.querySelector(".rotate");
+      if (elem != null) {
+        const spin = [
+          { transform: "rotate(0)" },
+          { transform: "rotate(360deg)" },
+        ];
+        const timing = {
+          duration: 2000,
+          iterations: 1,
+        };
+        elem.addEventListener("mouseover", () => {
+          elem.animate(spin, timing);
+        });
+        elem.addEventListener("click", () => {
+          elem.animate(spin, timing);
+        });
+      }
+
+</script>
+</body>
+</html>
+

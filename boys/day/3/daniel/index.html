@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Meine Website</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Combo&family=Indie+Flower&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="tags.html">Auswahl Tags</a>
+    <a href="https://kids-science.github.io/">Übersicht</a>
+</nav>
+<header>
+    <h3>Darf ich vorstellen...</h3>
+    <h1>tri not to laugh</h1>
+</header>
+<img src="lol.jpg" alt="herzige dick katze" class="center rotate"/>
+<h2>Meine Lieblingstiere</h2>
+<ul>
+    <li>Katze</li>
+    <li>Hund</li>
+</ul>
+<ol>
+    <li>Katze</li>
+    <li>Hund</li>
+    <li>Goldfisch</li>
+</ol>
+
+</ul>
+
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5Dkw1KnoTwY" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+/iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dNpXTEOkwl8" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+<label for="Tier">Choose a Animal:</label>
+<select name="tire" id="Tier">
+    <option valcarue="Katze">Katze</option>
+    <option value="Hund">Hund</option>
+    <option value="Hamsters">Hamster</option>
+    <option value="Schlange">Schlange</option>
+    </script>
+
+    let elem = document.querySelector(".rotate");
+    if (elem != null) {
+    const spin = [
+    { transform: "rotate(0)" },
+    { transform: "rotate(360deg)" },
+    ];
+    const timing = {
+    duration: 2000,
+    iterations: 1,
+    };
+    elem.addEventListener("mouseover", () => {
+    elem.animate(spin, timing);
+    });
+    elem.addEventListener("click", () => {
+    elem.animate(spin, timing);
+    });
+    }
+    </script>
+</body>
+</html>

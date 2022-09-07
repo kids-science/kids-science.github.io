@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leichtathletik</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="tags.html">Auswahl Tags</a>
+      <a href="https://kids-science.github.io/">Übersicht</a>
+    </nav>
+    <header>
+      <h3>Darf ich vorstellen...</h3>
+      <h1>...Leichtathletik</h1>
+    </header>
+    <img src="William Reais.jpg" alt="William Reais im Stadion"class="center rotate" />
+    <h2>Mein Lieblingsleichtathlet</h2>
+    <ul>
+
+      <li>William Reais</li>
+
+    </ul>
+    <h2>Biografie</h2>
+    <p>
+      William Reais wohnt im Graubünden in der Schweiz. Er hat 2021 Gold  im 200 Meter Europameisterschaft in Tallinn. Sein Rekord im 200 Meter liegt bei 20,24. Der Weltrekord im 200 Meter liegt bei 19,19.
+    </p>
+    <ul>
+    <li>2x Schweizer Meister</li>
+    <li>1x Europameister</li>
+    <li>4x Nationaler Hallenmeister</li>
+    </ul>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/1KpFet3I5y4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <a href="https://www.williamreais.com"target="_blank">Link zu William Reais</a>
+
+    <script>
+          { transform: "rotate(360deg)" },
+        ];
+        const timing = {
+      let elem = document.querySelector(".rotate");
+      if (elem != null) {
+        const spin = [
+          { transform: "rotate(0)" },
+          duration: 2000,
+          iterations: 1,
+        };
+        elem.addEventListener("mouseover", () => {
+          elem.animate(spin, timing);
+        });
+        elem.addEventListener("click", () => {
+          elem.animate(spin, timing);
+        });
+      }
+    </script>
+  </body>
+</html>

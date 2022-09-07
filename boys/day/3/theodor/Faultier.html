@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Costa Rica</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="Quetzal.html">Quetzal</a>
+    <a href="Faultier.html">Faultier</a>
+    <a href="about.html">About</a>
+    <a href="tags.html">Auswahl Tags</a>
+    <a href="https://kids-science.github.io/">Übersicht</a>
+</nav>
+<header>
+    <h1>Costa Rica</h1>
+</header>
+<label for="Tiere">Choose a Tier:</label>
+<select name="Tiere" id="Tiere">
+    <option value="Faultier">Faultier</option>
+    <option value="saab">Saab</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+</select>
+<h2>Das Faultier</h2>
+<img src="Faultier.jpg" alt="Faultier mit Babyfaultier">
+    <p>Die Faultiere (Folivora, auch Tardigrada oder Phyllophaga) bilden eine Unterordnung der zahnarmen Säugetiere (Pilosa)
+        und sind mit den Ameisenbären und den Gürteltieren verwandt (Nebengelenktiere).
+        Die drei verfügbaren wissenschaftlichen Bezeichnungen finden in Fachveröffentlichungen rege Verwendung,
+        die beiden letztgenannten sind aber auch durch andere Tiergruppen belegt.
+        Es bestehen sechs rezente Arten, die sich auf die beiden Gattungen der Zweifinger-Faultiere (Choloepus)
+        und der Dreifinger-Faultiere (Bradypus) verteilen.
+        Bei diesen heute lebenden Arten handelt es sich um eher kleine Tiere der Unterordnung,
+        die durchschnittlich 50 cm lang und etwa 5 kg schwer werden.
+        Sie bewohnen zumeist tropische Regenwälder in Süd- und Mittelamerika,
+        wo sie sich bevorzugt in den Baumkronen aufhalten und sich von blatthaltiger Pflanzenkost ernähren.
+        Bekannt sind die Faultiere vor allem durch ihre – mit dem Rücken nach unten
+        – im Geäst hängende Lebensweise, ihre sehr langsamen Bewegungen und die langen Ruhephasen.
+        Die beiden letztgenannten Eigenschaften werden durch einen extrem niedrigen Stoffwechsel hervorgerufen,
+        der aus der energiearmen Blattnahrung resultiert.</p>
+<script>
+      let elem = document.querySelector(".rotate");
+      if (elem != null) {
+        const spin = [
+          { transform: "rotate(0)" },
+          { transform: "rotate(360deg)" },
+        ];
+        const timing = {
+          duration: 2000,
+          iterations: 1,
+        };
+        elem.addEventListener("mouseover", () => {
+          elem.animate(spin, timing);
+        });
+        elem.addEventListener("click", () => {
+          elem.animate(spin, timing);
+        });
+      }
+
+</script>
+</body>
+</html>
+
